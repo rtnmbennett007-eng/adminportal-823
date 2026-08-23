@@ -1,0 +1,1521 @@
+{
+  "staff": [
+    {
+      "id": "staff-dana",
+      "name": "Dana Javier",
+      "email": "dana.javier@maplexfinancial.com",
+      "password": "Admin2026!",
+      "phone": "(555) 234-5678",
+      "jobTitle": "Director of Operations & Funding",
+      "department": "Operations",
+      "role": "INTERNAL_STAFF_ADMIN",
+      "avatar": "",
+      "active": true,
+      "notes": "Full administrative access and operational authority.",
+      "discordUsername": "dana_javier",
+      "discordUserId": ""
+    },
+    {
+      "id": "staff-luke",
+      "name": "Luke Cowan",
+      "email": "luke.cowan@maplexfinancial.com",
+      "password": "Admin2026!",
+      "phone": "(555) 345-6789",
+      "jobTitle": "Managing Partner & Senior Underwriter",
+      "department": "Underwriting",
+      "role": "INTERNAL_STAFF_ADMIN",
+      "avatar": "",
+      "active": true,
+      "notes": "Full administrative access, credit committee & stacking principal.",
+      "discordUsername": "luke_cowan",
+      "discordUserId": ""
+    },
+    {
+      "id": "staff-steve",
+      "name": "Steve",
+      "email": "steve@maplexfinancial.com",
+      "password": "Admin2026!",
+      "phone": "(555) 456-7890",
+      "jobTitle": "Senior Financial Strategist",
+      "department": "Sales & Structuring",
+      "role": "INTERNAL_STAFF_ADMIN",
+      "avatar": "",
+      "active": true,
+      "notes": "Full administrative access, client origination & structuring.",
+      "discordUsername": "steve_maplex",
+      "discordUserId": ""
+    },
+    {
+      "id": "staff-robert",
+      "name": "Robert",
+      "email": "robert@maplexfinancial.com",
+      "password": "Admin2026!",
+      "phone": "(555) 567-8901",
+      "jobTitle": "Managing Director & Principal",
+      "department": "Executive Operations",
+      "role": "INTERNAL_STAFF_ADMIN",
+      "avatar": "",
+      "active": true,
+      "notes": "Full executive management authority.",
+      "discordUsername": "robert_maplex",
+      "discordUserId": ""
+    }
+  ],
+  "roles": [
+    {
+      "id": "role-admin",
+      "name": "Internal Staff Admin",
+      "description": "Full unconstrained authority over operations, deals, verification, underwriting, and commissions.",
+      "permissions": [
+        "all",
+        "view_ssn",
+        "manage_users",
+        "edit_commissions",
+        "delete_records",
+        "manage_lenders"
+      ],
+      "isSystem": true,
+      "createdAt": "2026-08-23T15:23:41.815Z",
+      "updatedAt": "2026-08-23T15:23:41.816Z"
+    },
+    {
+      "id": "role-underwriter",
+      "name": "Senior Underwriter",
+      "description": "Underwriting review, credit evaluation, lender history management, and deal stacking.",
+      "permissions": [
+        "underwriting_read",
+        "underwriting_write",
+        "verification_read",
+        "deals_read",
+        "deals_write"
+      ],
+      "isSystem": false,
+      "createdAt": "2026-08-23T15:23:41.816Z",
+      "updatedAt": "2026-08-23T15:23:41.816Z"
+    },
+    {
+      "id": "role-operations",
+      "name": "Operations Specialist",
+      "description": "Phone verification, document intake, task management, and client onboarding.",
+      "permissions": [
+        "verification_write",
+        "documents_write",
+        "tasks_write",
+        "clients_read"
+      ],
+      "isSystem": false,
+      "createdAt": "2026-08-23T15:23:41.816Z",
+      "updatedAt": "2026-08-23T15:23:41.816Z"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "task-1",
+      "title": "Review closing conditions for Deal #2 ($50,000 Personal Term Loan)",
+      "description": "Check final lender approval documents from Apex Commercial Partners for Elena Rostova.",
+      "clientId": "client-2001",
+      "clientName": "Elena Rostova",
+      "dealId": "deal-3002",
+      "dealTitle": "Personal Term Loan ($50,000)",
+      "category": "Funding Deal",
+      "assignedTo": "Dana",
+      "dueDate": "2026-08-23",
+      "dueTime": "15:00",
+      "priority": "High",
+      "status": "In Progress",
+      "reminder": "30 minutes before",
+      "notes": "Lender requested updated voided check with matching legal entity.",
+      "createdBy": "Luke",
+      "createdDate": "2026-08-23T03:23:41.819Z",
+      "updatedAt": "2026-08-23T15:23:41.819Z"
+    },
+    {
+      "id": "task-2",
+      "title": "Submit daily origination summary to Robert",
+      "description": "Prepare executive breakdown of 2 funded deals and 4 pipeline applications.",
+      "category": "General",
+      "assignedTo": "Dana",
+      "dueDate": "2026-08-23",
+      "dueTime": "17:30",
+      "priority": "Medium",
+      "status": "To Do",
+      "reminder": "1 hour before",
+      "notes": "Include commission collection reconciliation.",
+      "createdBy": "Dana",
+      "createdDate": "2026-08-22T15:23:41.819Z",
+      "updatedAt": "2026-08-23T15:23:41.819Z"
+    },
+    {
+      "id": "task-3",
+      "title": "Overdue: Follow up with Marcus Vance on missing 3 months bank statements",
+      "description": "Inbound lead from ABC Financial Partners needs 3 months PDF bank statements before verification call can start.",
+      "category": "Client",
+      "assignedTo": "Steve",
+      "dueDate": "2026-08-21",
+      "dueTime": "11:00",
+      "priority": "High",
+      "status": "To Do",
+      "reminder": "1 day before",
+      "notes": "Marcus mentioned he would download Chase PDFs over the weekend.",
+      "createdBy": "Steve",
+      "createdDate": "2026-08-20T15:23:41.819Z",
+      "updatedAt": "2026-08-23T15:23:41.819Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "notif-1",
+      "userId": "Dana",
+      "title": "High Priority Task Due Today",
+      "message": "Review closing conditions for Deal #2 ($50,000 Personal Term Loan) with Elena Rostova.",
+      "type": "HIGH_PRIORITY_TASK",
+      "priority": "High",
+      "isRead": false,
+      "createdAt": "2026-08-23T13:23:41.819Z",
+      "targetType": "task",
+      "targetId": "task-1"
+    },
+    {
+      "id": "notif-2",
+      "userId": "all",
+      "title": "Deal #1 Funded — $45,000 (Elena Rostova)",
+      "message": "Primary revenue funding deal successfully funded via Maple Direct Capital.",
+      "type": "FUNDED",
+      "priority": "High",
+      "isRead": false,
+      "createdAt": "2026-08-22T15:23:41.819Z",
+      "targetType": "deal",
+      "targetId": "deal-3001"
+    },
+    {
+      "id": "notif-3",
+      "userId": "all",
+      "title": "Pre-Approval Received: Apex Commercial Partners",
+      "message": "Elena Rostova pre-approved for $50,000 Personal Term Loan at 8.9% Fixed APR.",
+      "type": "PRE_APPROVAL",
+      "priority": "Medium",
+      "isRead": false,
+      "createdAt": "2026-08-22T21:23:41.819Z",
+      "targetType": "client",
+      "targetId": "client-2001"
+    }
+  ],
+  "fundingStrategies": [
+    {
+      "id": "strat-2001-1",
+      "clientId": "client-2001",
+      "currentSituation": "Revenue is strong ($70k+/mo) and personal credit is excellent (710). Client requires total $95k capital injection for inventory & lab machine.",
+      "strategy": "Execute dual tranche stack: $45k Revenue Funding for instant working capital (funded) + $50k Personal Term Loan (pre-approved). Review HELOC eligibility for secondary reserves.",
+      "nextSteps": "1. Complete final terms review for Deal #2 (Apex Commercial Personal Term Loan).\n2. Gather closing voided check.\n3. Request payoff authorization for small equipment lien.",
+      "productsToPursue": "Revenue Funding (Funded), Personal Term Loan (Pre-Approved), HELOC (Backup)",
+      "problemsToSolve": "Maintain optimal debt-service coverage ratio while minimizing monthly payment burden.",
+      "missingDocuments": "None. All bank statements and tax returns reviewed.",
+      "creditIssues": "None. Personal bureaus unlocked.",
+      "lenderStrategy": "Maple Direct Capital for fast tranche 1; Apex Commercial for prime tranche 2.",
+      "assignedTo": "Robert",
+      "priority": "High",
+      "nextReviewDate": "2026-08-28",
+      "strategyStatus": "Active",
+      "strategyNotes": "Client is extremely responsive. Closing Deal #2 next week.",
+      "createdBy": "Robert",
+      "createdDate": "2026-08-21T15:23:41.819Z",
+      "updatedAt": "2026-08-23T15:23:41.819Z",
+      "isActive": true
+    }
+  ],
+  "internalNotes": [
+    {
+      "id": "note-1",
+      "clientId": "client-2001",
+      "author": "Dana",
+      "type": "Verification",
+      "content": "Elena answered on 1st ring. Confirmed Illinois business registration and $850k annual gross revenue. Very pleasant and organized.",
+      "timestamp": "2026-08-22T15:23:41.819Z"
+    },
+    {
+      "id": "note-2",
+      "clientId": "client-2001",
+      "author": "Luke",
+      "type": "Underwriting",
+      "content": "Clean debt profile. SBA 7(a) balance is down to $38k. Revenue is steady at $70k/mo. Approved $45k Revenue + $50k Personal Term Loan stack.",
+      "timestamp": "2026-08-22T15:23:41.819Z"
+    },
+    {
+      "id": "note-3",
+      "clientId": "client-2001",
+      "author": "Robert",
+      "type": "Strategy",
+      "content": "Recommended pursuing HELOC review in Q4 as a tertiary reserve once Term Loan is seasoned.",
+      "timestamp": "2026-08-23T03:23:41.819Z"
+    }
+  ],
+  "lenderHistory": [
+    {
+      "id": "lh-1",
+      "clientId": "client-2001",
+      "dealId": "deal-3001",
+      "lenderName": "Maple Direct Capital",
+      "fundingProduct": "Revenue Funding",
+      "dateSent": "2026-08-20",
+      "sentBy": "Dana",
+      "status": "Approved",
+      "response": "Approved at prime factor rate 1.18x",
+      "amount": 45000,
+      "terms": "12 Months Daily / Weekly ACH",
+      "conditions": "Voided check and signed funding contract",
+      "requiredDocuments": "Driver License, 4 Mo Bank Statements",
+      "lenderNotes": "Fast-tracked based on high average daily balance. Funded on 08/21/2026.",
+      "responseDate": "2026-08-21",
+      "nextStep": "Complete commission reconciliation.",
+      "createdAt": "2026-08-23T15:23:41.819Z",
+      "updatedAt": "2026-08-23T15:23:41.819Z"
+    },
+    {
+      "id": "lh-2",
+      "clientId": "client-2001",
+      "dealId": "deal-3002",
+      "lenderName": "Apex Commercial Partners",
+      "fundingProduct": "Personal Term Loan",
+      "dateSent": "2026-08-21",
+      "sentBy": "Luke",
+      "status": "Pre-Approved",
+      "response": "Pre-Approved at 8.9% Fixed APR",
+      "amount": 50000,
+      "terms": "36 Months Monthly Amortization",
+      "conditions": "Provide 2025 W2 and latest bi-weekly pay stub",
+      "requiredDocuments": "2025 W2, Pay Stubs, Voided Check",
+      "lenderNotes": "Excellent credit score (710) qualifies for tier 1 rate. Closing scheduled this week.",
+      "responseDate": "2026-08-22",
+      "nextStep": "Final document execution.",
+      "createdAt": "2026-08-23T15:23:41.819Z",
+      "updatedAt": "2026-08-23T15:23:41.819Z"
+    }
+  ],
+  "creditCards": [
+    {
+      "id": "cc-1",
+      "clientId": "client-2001",
+      "cardCategory": "BUSINESS",
+      "cardType": "Visa Signature",
+      "issuer": "Chase",
+      "cardName": "Chase Ink Business Preferred",
+      "cardholder": "Elena Rostova",
+      "creditLimit": 35000,
+      "currentBalance": 6200,
+      "availableCredit": 28800,
+      "monthlyPayment": 250,
+      "utilization": 17.7,
+      "openedDate": "2021-04-12",
+      "lastFourDigits": "8192",
+      "notes": "Primary business operational expenses card, paid in full monthly.",
+      "createdAt": "2026-08-23T15:23:41.819Z",
+      "updatedAt": "2026-08-23T15:23:41.819Z"
+    },
+    {
+      "id": "cc-2",
+      "clientId": "client-2001",
+      "cardCategory": "BUSINESS",
+      "cardType": "American Express",
+      "issuer": "Amex",
+      "cardName": "American Express Business Gold",
+      "cardholder": "Elena Rostova",
+      "creditLimit": 50000,
+      "currentBalance": 4100,
+      "availableCredit": 45900,
+      "monthlyPayment": 150,
+      "utilization": 8.2,
+      "openedDate": "2022-09-18",
+      "lastFourDigits": "3049",
+      "notes": "Used for medical diagnostic supply orders.",
+      "createdAt": "2026-08-23T15:23:41.819Z",
+      "updatedAt": "2026-08-23T15:23:41.819Z"
+    },
+    {
+      "id": "cc-3",
+      "clientId": "client-2001",
+      "cardCategory": "PERSONAL",
+      "cardType": "Visa Infinite",
+      "issuer": "Chase",
+      "cardName": "Chase Sapphire Reserve",
+      "cardholder": "Elena Rostova",
+      "creditLimit": 28000,
+      "currentBalance": 2100,
+      "availableCredit": 25900,
+      "monthlyPayment": 100,
+      "utilization": 7.5,
+      "openedDate": "2019-11-05",
+      "lastFourDigits": "4920",
+      "notes": "Personal prime rewards card in perfect standing.",
+      "createdAt": "2026-08-23T15:23:41.819Z",
+      "updatedAt": "2026-08-23T15:23:41.819Z"
+    }
+  ],
+  "masterVerifications": {
+    "client-2001": {
+      "id": "mvw-client-2001",
+      "clientId": "client-2001",
+      "verificationSpecialist": "Dana",
+      "date": "2026-08-23",
+      "status": "VERIFIED",
+      "overallResult": "APPROVED_FOR_UNDERWRITING",
+      "callSummary": "All identity, Illinois business registration, and $850k annual gross revenue confirmed with Elena over recorded phone call.",
+      "internalNotesRedFlags": "No critical red flags detected during initial intake.",
+      "preCallReview": {
+        "clientName": true,
+        "businessName": true,
+        "phone": true,
+        "email": true,
+        "businessAddress": true,
+        "entityType": true,
+        "ein": true,
+        "timeInBusiness": true,
+        "ownershipPercentage": true,
+        "monthlyRevenue": true,
+        "personalAnnualIncome": true,
+        "requestedFunding": true,
+        "purposeOfFunds": true,
+        "uploadedDocuments": true,
+        "ssn": true,
+        "dob": true,
+        "stateOfIncorporation": true,
+        "creditScore": true,
+        "missingInfoNotes": "All 17 application datapoints present for call."
+      },
+      "openingScript": {
+        "answered": true,
+        "continueNow": true,
+        "rescheduleDate": "",
+        "rescheduleNotes": ""
+      },
+      "identity": {
+        "legalName": {
+          "asApplied": "Elena Rostova",
+          "verified": "Elena Rostova",
+          "status": "Matches Application",
+          "notes": "Confirmed photo ID match."
+        },
+        "phone": {
+          "asApplied": "(312) 555-0142",
+          "verified": "(312) 555-0142",
+          "status": "Verified",
+          "notes": "Direct cell verified."
+        },
+        "email": {
+          "asApplied": "elena@rostovamedtech.com",
+          "verified": "elena@rostovamedtech.com",
+          "status": "Verified",
+          "notes": "Confirmed primary operational inbox."
+        },
+        "dob": {
+          "asApplied": "1982-09-24",
+          "verified": "1982-09-24",
+          "status": "Matches Application",
+          "notes": "DOB verified."
+        },
+        "ssnLast4": {
+          "asApplied": "1904",
+          "verified": "1904",
+          "status": "Verified",
+          "notes": "SSN last 4 confirmed."
+        }
+      },
+      "business": {
+        "businessName": {
+          "asApplied": "Rostova MedTech Diagnostics LLC",
+          "verified": "Rostova MedTech Diagnostics LLC",
+          "status": "Verified",
+          "notes": "Matches Secretary of State filing."
+        },
+        "dba": {
+          "asApplied": "Rostova Medical Imaging",
+          "verified": "Rostova Medical Imaging",
+          "status": "Verified",
+          "notes": ""
+        },
+        "businessAddress": {
+          "asApplied": "450 N Michigan Ave, Suite 1800",
+          "verified": "450 N Michigan Ave, Suite 1800",
+          "status": "Verified",
+          "notes": "Commercial physical location."
+        },
+        "ein": {
+          "asApplied": "36-9841203",
+          "verified": "36-9841203",
+          "status": "Verified",
+          "notes": "EIN verified on CP-575."
+        },
+        "stateOfIncorporation": {
+          "asApplied": "IL",
+          "verified": "IL",
+          "status": "Verified",
+          "notes": ""
+        },
+        "entityType": {
+          "asApplied": "LLC",
+          "verified": "LLC",
+          "status": "Verified",
+          "notes": ""
+        },
+        "businessStartDate": {
+          "asApplied": "2018-05-15",
+          "verified": "2018-05-15",
+          "status": "Verified",
+          "notes": ""
+        },
+        "timeInBusiness": {
+          "asApplied": "5+ Years",
+          "verified": "5+ Years",
+          "status": "Verified",
+          "notes": "Continuous active operations."
+        },
+        "industry": {
+          "asApplied": "Healthcare Diagnostics & Medical Equipment",
+          "verified": "Healthcare Diagnostics & Medical Equipment",
+          "status": "Verified",
+          "notes": ""
+        },
+        "businessDescription": {
+          "asApplied": "Specialized diagnostic imaging and laboratory supplies distributor.",
+          "verified": "Specialized diagnostic imaging and laboratory supplies distributor.",
+          "status": "Verified",
+          "notes": ""
+        },
+        "ownershipPercentage": {
+          "asApplied": "100%",
+          "verified": "100%",
+          "status": "Verified",
+          "notes": "100% sole owner."
+        },
+        "ownerTitle": {
+          "asApplied": "President & CEO",
+          "verified": "President & CEO",
+          "status": "Verified",
+          "notes": ""
+        }
+      },
+      "employment": {
+        "selfEmployedOnly": false,
+        "alsoEmployedFullTime": true,
+        "employer": "Apex Healthcare Systems Inc.",
+        "position": "Senior Operations Director",
+        "yearsEmployed": "4.5 Years",
+        "employmentStartDate": "2020-03-01",
+        "employmentStatus": "Full Time Active W2",
+        "annualSalary": 145000,
+        "monthlySalary": 12083,
+        "payFrequency": "Bi-Weekly",
+        "otherEmploymentIncome": "$15,000 annual bonus",
+        "employmentNotes": "Stable high W2 income backing commercial debt service.",
+        "redFlags": "None"
+      },
+      "employmentVerification": {
+        "sectionStatus": "Verified",
+        "currentlyWorking": {
+          "asApplied": "Yes",
+          "verified": "Yes",
+          "status": "Verified",
+          "notes": "Currently employed and working full-time",
+          "script": "Are you currently working, either for your own business or for another employer?"
+        },
+        "selfEmployed": {
+          "asApplied": "Yes",
+          "verified": "Yes",
+          "status": "Verified",
+          "notes": "Sole member/owner of business LLC",
+          "script": "Are you currently self-employed or do you work for another employer?"
+        },
+        "employedByAnotherCompany": {
+          "asApplied": "Yes",
+          "verified": "Yes",
+          "status": "Verified",
+          "notes": "W-2 employee at Apex Healthcare Systems",
+          "script": "Are you currently employed by another company in addition to owning your business?"
+        },
+        "employerName": {
+          "asApplied": "Apex Healthcare Systems Inc.",
+          "verified": "Apex Healthcare Systems Inc.",
+          "status": "Verified",
+          "notes": "Active hospital network employer",
+          "script": "What is the name of your current employer?"
+        },
+        "jobTitle": {
+          "asApplied": "Senior Operations Director",
+          "verified": "Senior Operations Director",
+          "status": "Verified",
+          "notes": "Senior executive role",
+          "script": "What is your current job title or position?"
+        },
+        "jobOccupation": {
+          "asApplied": "Healthcare Management",
+          "verified": "Healthcare Management",
+          "status": "Verified",
+          "notes": "Healthcare and operations management",
+          "script": "What do you do in your current job?"
+        },
+        "jobDescription": {
+          "asApplied": "Directs regional healthcare clinical logistics, procurement, and staff oversight.",
+          "verified": "Directs regional healthcare clinical logistics, procurement, and staff oversight.",
+          "status": "Verified",
+          "notes": "Confirmed with HR directory",
+          "script": "Can you briefly explain what your responsibilities are in your current job?"
+        },
+        "employmentStartDate": {
+          "asApplied": "2020-03-01",
+          "verified": "2020-03-01",
+          "status": "Verified",
+          "notes": "4.5+ years of continuous service",
+          "script": "When did you start working for your current employer?"
+        },
+        "yearsWithEmployer": {
+          "asApplied": "4.5 Years",
+          "verified": "4.5 Years",
+          "status": "Verified",
+          "notes": "Continuous tenure",
+          "script": "How long have you been with your current employer?"
+        },
+        "employmentTypeStatus": {
+          "asApplied": "Full-Time",
+          "verified": "Full-Time",
+          "status": "Verified",
+          "notes": "Exempt salaried full-time employee",
+          "script": "Would you consider your current employment full-time, part-time, contract, seasonal, or other?"
+        },
+        "annualSalary": {
+          "asApplied": "$145,000",
+          "verified": "$145,000",
+          "status": "Verified",
+          "notes": "Base salary verified via pay stub",
+          "script": "What is your current annual salary?"
+        },
+        "monthlySalary": {
+          "asApplied": "$12,083",
+          "verified": "$12,083",
+          "status": "Verified",
+          "notes": "Calculated from annual salary",
+          "script": "Approximately how much do you earn from your employment each month?"
+        },
+        "annualEmploymentIncome": {
+          "asApplied": "$160,000",
+          "verified": "$160,000",
+          "status": "Verified",
+          "notes": "Includes $15,000 annual performance bonus",
+          "script": "What is your total annual employment income?"
+        },
+        "monthlyEmploymentIncome": {
+          "asApplied": "$13,333",
+          "verified": "$13,333",
+          "status": "Verified",
+          "notes": "Includes bonus distribution",
+          "script": "What is your total monthly employment income?"
+        },
+        "otherMonthlyIncome": {
+          "asApplied": "$2,500",
+          "verified": "$2,500",
+          "status": "Verified",
+          "notes": "Rental property cashflow",
+          "script": "Do you have any other regular monthly income outside of your business or employment?"
+        },
+        "otherIncomeSource": {
+          "asApplied": "Rental Property / Investment",
+          "verified": "Rental Property / Investment",
+          "status": "Verified",
+          "notes": "Schedule E on tax returns",
+          "script": "What is the source of that additional income?"
+        },
+        "receivesPayStubs": {
+          "asApplied": "Yes",
+          "verified": "Yes",
+          "status": "Verified",
+          "notes": "Bi-weekly electronic pay stubs",
+          "script": "Do you receive pay stubs from your employer?"
+        },
+        "paidThroughPayroll": {
+          "asApplied": "Yes",
+          "verified": "Yes",
+          "status": "Verified",
+          "notes": "Automated direct deposit via ADP",
+          "script": "Are you currently paid through a formal payroll system?"
+        },
+        "payFrequency": {
+          "asApplied": "Biweekly",
+          "verified": "Biweekly",
+          "status": "Verified",
+          "notes": "Every other Friday",
+          "script": "How often do you receive your paycheck?"
+        },
+        "mostRecentPayStubDate": {
+          "asApplied": "2026-08-15",
+          "verified": "2026-08-15",
+          "status": "Verified",
+          "notes": "Latest cycle on file",
+          "script": "What is the date of your most recent pay stub?"
+        },
+        "payStubReceived": {
+          "asApplied": "Yes",
+          "verified": "Yes",
+          "status": "Verified",
+          "notes": "PDF uploaded to Document Vault",
+          "script": "Has the pay stub document been received?"
+        },
+        "payStubReviewed": {
+          "asApplied": "Yes",
+          "verified": "Yes",
+          "status": "Verified",
+          "notes": "Reviewed and corroborated by underwriter",
+          "script": "Has the pay stub been reviewed for accuracy?"
+        },
+        "employmentIncomeNotes": "Client maintains a stable high-compensation W2 role in addition to owning 100% of the operating business. Strong overall repayment capacity.",
+        "redFlags": "None detected. Employment is stable (4.5+ yrs) and corroborated with recent ADP pay stubs.",
+        "updatedAt": "2026-08-23T20:32:12.560Z",
+        "updatedBy": "Dana"
+      },
+      "income": {
+        "personalAnnualIncome": 145000,
+        "monthlyBusinessRevenue": 70833,
+        "verifiedPersonalAnnualIncome": 145000,
+        "verifiedMonthlyBusinessRevenue": 70833,
+        "exactCreditScore": 710,
+        "revenueTrend": "Consistent",
+        "revenueTrendExplanation": "Consistent monthly revenue averaging $70k+ with no seasonality drops.",
+        "incomeNotes": "Strong bank deposit velocity confirmed.",
+        "redFlags": "None"
+      },
+      "payroll": {
+        "paysSelfThroughPayroll": true,
+        "issuesPayStubs": true,
+        "salary": 145000,
+        "grossPay": 5576,
+        "netPay": 4120,
+        "payFrequency": "Bi-Weekly",
+        "payrollStartDate": "2020-03-01",
+        "latestPayStubDate": "2026-08-15",
+        "payStubReceived": true,
+        "payStubReviewed": true,
+        "payrollNotes": "ADP payroll stubs verified with electronic direct deposits.",
+        "redFlags": "None"
+      },
+      "banking": {
+        "primaryBank": "Chase Commercial Banking",
+        "dedicatedBusinessChecking": true,
+        "businessAccount": "Chase Business Total Checking (...8912)",
+        "personalAccountUsedForBusiness": false,
+        "businessIncomeDepositedIntoPersonal": false,
+        "regularBusinessToPersonalTransfers": true,
+        "transferFrequency": "Monthly owner draws",
+        "approximateTransferAmount": 8500,
+        "bankingExplanation": "Clean separation between personal accounts and corporate checking.",
+        "bankingNotes": "No NSF / overdraft charges in the last 6 months.",
+        "redFlags": "None"
+      },
+      "documentChecklist": {
+        "driversLicense": {
+          "received": true,
+          "stillNeeded": false,
+          "sentAfterCall": false,
+          "reviewed": true,
+          "reviewedBy": "Dana",
+          "reviewedDate": "2026-08-20",
+          "notes": "Valid state DL"
+        },
+        "bankStatements": {
+          "received": true,
+          "stillNeeded": false,
+          "sentAfterCall": false,
+          "reviewed": true,
+          "reviewedBy": "Luke",
+          "reviewedDate": "2026-08-20",
+          "notes": "4 months clean"
+        },
+        "taxReturns": {
+          "received": true,
+          "stillNeeded": false,
+          "sentAfterCall": false,
+          "reviewed": true,
+          "reviewedBy": "Luke",
+          "reviewedDate": "2026-08-21",
+          "notes": "2024 & 2025 1040/1120S"
+        },
+        "voidedCheck": {
+          "received": true,
+          "stillNeeded": false,
+          "sentAfterCall": false,
+          "reviewed": true,
+          "reviewedBy": "Dana",
+          "reviewedDate": "2026-08-20",
+          "notes": "Matches direct account"
+        },
+        "profitAndLoss": {
+          "received": true,
+          "stillNeeded": false,
+          "sentAfterCall": false,
+          "reviewed": true,
+          "reviewedBy": "Luke",
+          "reviewedDate": "2026-08-21",
+          "notes": "YTD 2026 P&L"
+        },
+        "articlesOfOrg": {
+          "received": true,
+          "stillNeeded": false,
+          "sentAfterCall": false,
+          "reviewed": true,
+          "reviewedBy": "Dana",
+          "reviewedDate": "2026-08-20",
+          "notes": "Good standing"
+        },
+        "businessLicense": {
+          "received": true,
+          "stillNeeded": false,
+          "sentAfterCall": false,
+          "reviewed": true,
+          "reviewedBy": "Dana",
+          "reviewedDate": "2026-08-20",
+          "notes": "Current state license"
+        },
+        "other": {
+          "received": true,
+          "stillNeeded": false,
+          "sentAfterCall": false,
+          "reviewed": true,
+          "reviewedBy": "Dana",
+          "reviewedDate": "2026-08-20",
+          "notes": "W2 pay stubs"
+        }
+      },
+      "existingDebts": [
+        {
+          "id": "d-1",
+          "clientId": "client-2001",
+          "lender": "SBA 7(a) Loan",
+          "loanType": "SBA Loan",
+          "originalLoanAmount": 50000,
+          "termMonths": 120,
+          "monthlyPayment": 840,
+          "currentBalance": 38000,
+          "status": "Current",
+          "notes": "No missed payments"
+        },
+        {
+          "id": "d-2",
+          "clientId": "client-2001",
+          "lender": "Equipment Line",
+          "loanType": "Equipment Financing",
+          "originalLoanAmount": 25000,
+          "termMonths": 36,
+          "monthlyPayment": 780,
+          "currentBalance": 12000,
+          "status": "Current",
+          "notes": "Diagnostic machine"
+        },
+        {
+          "id": "d-3",
+          "clientId": "client-2001",
+          "lender": "None",
+          "loanType": "MCA",
+          "originalLoanAmount": 0,
+          "termMonths": 0,
+          "monthlyPayment": 0,
+          "currentBalance": 0,
+          "status": "None",
+          "notes": "Zero MCA stacking"
+        },
+        {
+          "id": "d-4",
+          "clientId": "client-2001",
+          "lender": "None",
+          "loanType": "Term Loan",
+          "originalLoanAmount": 0,
+          "termMonths": 0,
+          "monthlyPayment": 0,
+          "currentBalance": 0,
+          "status": "None",
+          "notes": ""
+        },
+        {
+          "id": "d-5",
+          "clientId": "client-2001",
+          "lender": "None",
+          "loanType": "Other",
+          "originalLoanAmount": 0,
+          "termMonths": 0,
+          "monthlyPayment": 0,
+          "currentBalance": 0,
+          "status": "None",
+          "notes": ""
+        }
+      ],
+      "bankruptcyForeclosureRepossession5Years": false,
+      "bankruptcyForeclosureNotes": "Zero derogatory credit history in past 7 years.",
+      "creditCards": [],
+      "recentCreditActivity": [
+        {
+          "id": "rc-1",
+          "clientId": "client-2001",
+          "lender": "Chase Business Card",
+          "dateApplied": "2026-03-10",
+          "amountRequested": 25000,
+          "product": "Credit Card",
+          "approved": true,
+          "result": "Approved",
+          "notes": "Instant approval"
+        },
+        {
+          "id": "rc-2",
+          "clientId": "client-2001",
+          "lender": "None",
+          "dateApplied": "",
+          "amountRequested": 0,
+          "product": "",
+          "approved": false,
+          "result": "Approved",
+          "notes": ""
+        },
+        {
+          "id": "rc-3",
+          "clientId": "client-2001",
+          "lender": "None",
+          "dateApplied": "",
+          "amountRequested": 0,
+          "product": "",
+          "approved": false,
+          "result": "Approved",
+          "notes": ""
+        },
+        {
+          "id": "rc-4",
+          "clientId": "client-2001",
+          "lender": "None",
+          "dateApplied": "",
+          "amountRequested": 0,
+          "product": "",
+          "approved": false,
+          "result": "Approved",
+          "notes": ""
+        },
+        {
+          "id": "rc-5",
+          "clientId": "client-2001",
+          "lender": "None",
+          "dateApplied": "",
+          "amountRequested": 0,
+          "product": "",
+          "approved": false,
+          "result": "Approved",
+          "notes": ""
+        }
+      ],
+      "housing": {
+        "homeAddressSameAsBusiness": false,
+        "homeAddressIfDifferent": "450 N Michigan Ave, Suite 1800, Chicago, IL 60611",
+        "housingType": "Homeowner",
+        "monthlyMortgageOrRent": 2400,
+        "housingNotes": "Primary single family residence, mortgage current.",
+        "redFlags": "None"
+      },
+      "fundingRequest": {
+        "requestedAmount": 95000,
+        "verifiedRequestedAmount": 95000,
+        "purposeOfFunds": "Working Capital",
+        "fundingUrgency": "Immediately",
+        "purposeNotes": "Bulk inventory purchasing and laboratory equipment upgrade.",
+        "redFlags": "None"
+      },
+      "creditVerification": {
+        "exactCreditScore": 710,
+        "creditUnlocked": true,
+        "fraudAlert": false,
+        "securityFreeze": false,
+        "creditNotes": "Personal credit bureaus unlocked across Experian, TransUnion, Equifax.",
+        "redFlags": "None"
+      },
+      "underwriterSummary": {
+        "overallImpression": "Excellent",
+        "biggestStrength": "Strong stable bank cash flow (> $70k/mo), dual income W2 + 100% corporate ownership, high credit score.",
+        "biggestConcern": "Existing SBA 7(a) balance of $38k (servicing comfortably).",
+        "cashFlowNotes": "Zero NSF incidents, consistent deposit density.",
+        "businessStabilityNotes": "8+ years active entity registration in Illinois.",
+        "additionalDocumentsNeeded": "None. File complete.",
+        "readyForSubmission": true,
+        "reasonIfNo": ""
+      },
+      "finalChecklist": {
+        "identityVerified": true,
+        "businessVerified": true,
+        "incomeVerified": true,
+        "employmentVerified": true,
+        "bankingVerified": true,
+        "documentsReceived": true,
+        "existingDebtReviewed": true,
+        "housingVerified": true,
+        "fundingAmountConfirmed": true,
+        "creditAvailableForPull": true,
+        "fileReadyForUnderwriting": true
+      },
+      "updatedAt": "2026-08-23T20:32:12.560Z"
+    }
+  },
+  "chatGptConfig": {
+    "apiKey": "",
+    "model": "gpt-4o",
+    "enabled": true,
+    "autoSyncVerification": true,
+    "autoSyncStrategyTasks": true,
+    "autoExtractStips": true,
+    "temperature": 0.2,
+    "lastTestedAt": "",
+    "lastTestStatus": ""
+  },
+  "discordConfig": {
+    "webhookUrl": "https://discord.com/api/webhooks/1540468120248909966/m8A8YCYHsKnUYGPp0HduOOvZ8AyVyPdAvYsRwVePKShsaAjHAlzZB68mCNb53KpKcSWn",
+    "channelName": "#portal",
+    "botUsername": "Maple X Operations Bot",
+    "mentionRole": "",
+    "enabled": true,
+    "events": {
+      "highPriorityTaskCreated": true,
+      "highPriorityTaskDue": true,
+      "taskOverdue": true,
+      "newLead": true,
+      "verificationComplete": true,
+      "underwritingReady": true,
+      "preApprovalReceived": true,
+      "approvalReceived": true,
+      "clientFunded": true,
+      "commissionReceived": true
+    },
+    "lastTestedAt": "",
+    "lastTestStatus": ""
+  },
+  "firebaseConfig": {
+    "apiKey": "",
+    "authDomain": "",
+    "projectId": "maplex-financial-portal",
+    "storageBucket": "",
+    "messagingSenderId": "",
+    "appId": "",
+    "isConfigured": true,
+    "lastVerifiedAt": "2026-08-23T15:23:41.816Z"
+  },
+  "leads": [
+    {
+      "id": "lead-1001",
+      "ghlContactId": "ghl_cnt_789412",
+      "ghlOpportunityId": "ghl_opp_342119",
+      "createdAt": "2026-08-20T15:23:41.819Z",
+      "updatedAt": "2026-08-23T15:45:02.621Z",
+      "leadSource": "Partner",
+      "referralPartner": "ABC Financial Partners",
+      "assignedSalesRep": "Steve",
+      "firstName": "Marcus",
+      "lastName": "Vance",
+      "businessName": "Vance Logistics & Freight LLC",
+      "email": "marcus@vancefreight.com",
+      "phone": "(214) 555-0199",
+      "state": "TX",
+      "industry": "Transportation & Logistics",
+      "status": "NEW_LEAD",
+      "notes": "Referred by ABC Financial Partners. Seeking fast fleet capital expansion.",
+      "applicationStatus": "SENT",
+      "ghlSyncStatus": "SYNCED",
+      "estimatedAmount": 75000
+    }
+  ],
+  "clients": [
+    {
+      "id": "client-2001",
+      "firstName": "Elena",
+      "lastName": "Rostova",
+      "email": "elena@rostovamedtech.com",
+      "phone": "(312) 555-0142",
+      "ssn": "492-88-1904",
+      "dob": "1982-09-24",
+      "address": "450 N Michigan Ave, Suite 1800",
+      "city": "Chicago",
+      "state": "IL",
+      "zip": "60611",
+      "businessName": "Rostova MedTech Diagnostics LLC",
+      "dba": "Rostova Medical Imaging",
+      "businessPhone": "(312) 555-0140",
+      "businessEmail": "contact@rostovamedtech.com",
+      "businessAddress": "450 N Michigan Ave, Suite 1800",
+      "businessCity": "Chicago",
+      "businessState": "IL",
+      "businessZip": "60611",
+      "industry": "Healthcare Diagnostics & Medical Equipment",
+      "businessStartDate": "2018-05-15",
+      "businessStartDateUnderCurrentOwnership": "2018-05-15",
+      "federalTaxId": "36-9841203",
+      "stateOfOrganization": "IL",
+      "entityType": "LLC",
+      "annualRevenue": 850000,
+      "monthlyRevenue": 70833,
+      "ownershipPercentage": 100,
+      "ownerTitle": "President & CEO",
+      "businessDescription": "Specialized diagnostic imaging and laboratory supplies distributor.",
+      "ghlContactId": "ghl_cnt_904123",
+      "ghlOpportunityId": "ghl_opp_561234",
+      "leadSource": "Partner",
+      "referralPartner": "ABC Financial Partners",
+      "assignedSalesRep": "Steve",
+      "assignedStaff": "Dana",
+      "currentStatus": "UNDERWRITING",
+      "createdAt": "2026-08-18T15:23:41.819Z",
+      "updatedAt": "2026-08-23T15:23:41.819Z",
+      "requestedAmount": 95000,
+      "requestedProduct": "Revenue Funding",
+      "useOfFunds": "Bulk inventory purchase for Q3 clinic contracts and software upgrade",
+      "creditScore": 710,
+      "existingLoans": "SBA 7(a) balance $38,000 in good standing ($840/mo)",
+      "existingMcas": "None",
+      "lenderBalances": "$38,000",
+      "bankruptcy": "None",
+      "foreclosure": "None",
+      "repossession": "None",
+      "isVerified": true,
+      "verifiedBy": "Dana",
+      "verificationDate": "2026-08-22T15:23:41.819Z",
+      "verificationSummary": "All identity, Illinois business registration, and $850k annual gross revenue confirmed with Elena over recorded phone call.",
+      "isUnderwritten": true,
+      "underwrittenBy": "Luke",
+      "underwritingDecision": "QUALIFIED",
+      "underwritingNotes": "Strong average daily balance (> $45k), solid debt-service coverage ratio, clean credit history with zero MCA stacking."
+    }
+  ],
+  "fundingDeals": [
+    {
+      "id": "deal-3001",
+      "clientId": "client-2001",
+      "clientName": "Elena Rostova",
+      "businessName": "Rostova MedTech Diagnostics LLC",
+      "product": "Revenue Funding",
+      "fundingAmount": 45000,
+      "fee": 1495,
+      "percentage": 6.9,
+      "termLength": "12 Months",
+      "status": "FUNDED",
+      "assignedStaff": "Dana",
+      "lenderStatus": "APPROVED",
+      "lenderName": "Maple Direct Capital",
+      "lenderContact": "underwriting@mapledirect.com",
+      "fundingDate": "2026-08-22T15:23:41.819Z",
+      "commissionStatus": "COLLECTED",
+      "commissionReceivedDate": "2026-08-23T03:23:41.819Z",
+      "notes": "Initial primary revenue funding tranche completed and funded.",
+      "createdAt": "2026-08-19T15:23:41.819Z",
+      "updatedAt": "2026-08-23T15:23:41.819Z",
+      "isStacked": false
+    },
+    {
+      "id": "deal-3002",
+      "clientId": "client-2001",
+      "clientName": "Elena Rostova",
+      "businessName": "Rostova MedTech Diagnostics LLC",
+      "product": "Personal Term Loan",
+      "fundingAmount": 50000,
+      "fee": 995,
+      "percentage": 7.5,
+      "termLength": "36 Months",
+      "status": "PRE_APPROVED",
+      "assignedStaff": "Luke",
+      "lenderStatus": "PRE_APPROVED",
+      "lenderName": "Apex Commercial Partners",
+      "lenderContact": "approvals@apexpartners.com",
+      "commissionStatus": "PENDING",
+      "notes": "Stacked personal term loan file pre-approved at prime rate.",
+      "createdAt": "2026-08-21T15:23:41.819Z",
+      "updatedAt": "2026-08-23T15:23:41.819Z",
+      "isStacked": true
+    }
+  ],
+  "commissionParticipants": [
+    {
+      "id": "cp-deal-3001-dana",
+      "dealId": "deal-3001",
+      "name": "Dana",
+      "type": "Internal Staff",
+      "role": "Operations & Funding",
+      "points": 1,
+      "dollarAmount": 450,
+      "notes": "Final settled distribution points",
+      "status": "RECEIVED",
+      "receivedDate": "2026-08-23T15:23:41.819Z",
+      "createdAt": "2026-08-19T15:23:41.819Z",
+      "updatedAt": "2026-08-23T15:23:41.819Z"
+    },
+    {
+      "id": "cp-deal-3001-luke",
+      "dealId": "deal-3001",
+      "name": "Luke",
+      "type": "Internal Staff",
+      "role": "Underwriting & Stacking",
+      "points": 2.9,
+      "dollarAmount": 1305,
+      "notes": "Final settled distribution points",
+      "status": "RECEIVED",
+      "receivedDate": "2026-08-23T15:23:41.819Z",
+      "createdAt": "2026-08-19T15:23:41.819Z",
+      "updatedAt": "2026-08-23T15:23:41.819Z"
+    },
+    {
+      "id": "cp-deal-3001-steve",
+      "dealId": "deal-3001",
+      "name": "Steve",
+      "type": "Internal Staff",
+      "role": "Deal Structuring",
+      "points": 1.475,
+      "dollarAmount": 663.75,
+      "notes": "Final settled distribution points",
+      "status": "RECEIVED",
+      "receivedDate": "2026-08-23T15:23:41.819Z",
+      "createdAt": "2026-08-19T15:23:41.819Z",
+      "updatedAt": "2026-08-23T15:23:41.819Z"
+    },
+    {
+      "id": "cp-deal-3001-robert",
+      "dealId": "deal-3001",
+      "name": "Robert",
+      "type": "Internal Staff",
+      "role": "Executive Principal",
+      "points": 1.025,
+      "dollarAmount": 461.25,
+      "notes": "Final settled distribution points",
+      "status": "RECEIVED",
+      "receivedDate": "2026-08-23T15:23:41.819Z",
+      "createdAt": "2026-08-19T15:23:41.819Z",
+      "updatedAt": "2026-08-23T15:23:41.819Z"
+    },
+    {
+      "id": "cp-deal-3001-abcfinancialpartners",
+      "dealId": "deal-3001",
+      "name": "ABC Financial Partners",
+      "type": "Referral Partner",
+      "role": "Referring Broker",
+      "points": 0.5,
+      "dollarAmount": 225,
+      "notes": "Final settled distribution points",
+      "status": "RECEIVED",
+      "receivedDate": "2026-08-23T15:23:41.819Z",
+      "createdAt": "2026-08-19T15:23:41.819Z",
+      "updatedAt": "2026-08-23T15:23:41.819Z"
+    }
+  ],
+  "commissionDirectory": [
+    {
+      "id": "dir-1",
+      "name": "Dana",
+      "type": "Internal Staff",
+      "role": "Operations & Funding",
+      "email": "dana@maplexfinancial.com",
+      "phone": "(555) 234-5678",
+      "company": "Maple X Financial",
+      "defaultPoints": 1,
+      "active": true
+    },
+    {
+      "id": "dir-2",
+      "name": "Luke",
+      "type": "Internal Staff",
+      "role": "Underwriting & Stacking",
+      "email": "luke@maplexfinancial.com",
+      "phone": "(555) 345-6789",
+      "company": "Maple X Financial",
+      "defaultPoints": 2.9,
+      "active": true
+    },
+    {
+      "id": "dir-3",
+      "name": "Steve",
+      "type": "Internal Staff",
+      "role": "Deal Structuring",
+      "email": "steve@maplexfinancial.com",
+      "phone": "(555) 456-7890",
+      "company": "Maple X Financial",
+      "defaultPoints": 1.475,
+      "active": true
+    },
+    {
+      "id": "dir-4",
+      "name": "Robert",
+      "type": "Internal Staff",
+      "role": "Executive Principal",
+      "email": "robert@maplexfinancial.com",
+      "phone": "(555) 567-8901",
+      "company": "Maple X Financial",
+      "defaultPoints": 1.525,
+      "active": true
+    },
+    {
+      "id": "dir-5",
+      "name": "ABC Financial Partners",
+      "type": "Referral Partner",
+      "role": "Referring Partner",
+      "email": "partner@abccapital.com",
+      "phone": "(555) 888-1212",
+      "company": "ABC Capital Group",
+      "defaultPoints": 0.5,
+      "active": true
+    },
+    {
+      "id": "dir-6",
+      "name": "Apex Commercial Brokers",
+      "type": "Broker Partner",
+      "role": "Commercial Syndication",
+      "email": "deals@apexcommercial.com",
+      "phone": "(555) 777-3434",
+      "company": "Apex Advisory LLC",
+      "defaultPoints": 1,
+      "active": true
+    }
+  ],
+  "verificationRecords": [],
+  "verificationAuditLogs": [],
+  "verificationScripts": [
+    {
+      "id": "sc-1",
+      "fieldKey": "businessName",
+      "fieldLabel": "Business Legal Name",
+      "category": "BUSINESS",
+      "scriptText": "“Can you please confirm the exact legal name of your business as it appears on your official business and state filing documents?”"
+    },
+    {
+      "id": "sc-2",
+      "fieldKey": "annualRevenue",
+      "fieldLabel": "Annual Gross Revenue",
+      "category": "BUSINESS",
+      "scriptText": "“Can you confirm your current annual gross business revenue and approximately how much revenue the business generates on an average monthly basis?”"
+    },
+    {
+      "id": "sc-3",
+      "fieldKey": "ownershipPercentage",
+      "fieldLabel": "Ownership Percentage",
+      "category": "BUSINESS",
+      "scriptText": "“Can you confirm what exact percentage of the business you personally own, and if there are any other owners holding 20% or more?”"
+    },
+    {
+      "id": "sc-4",
+      "fieldKey": "businessAddress",
+      "fieldLabel": "Business Address",
+      "category": "BUSINESS",
+      "scriptText": "“Can you confirm your complete physical business address, including suite number, city, state, and ZIP code?”"
+    },
+    {
+      "id": "sc-5",
+      "fieldKey": "existingLoans",
+      "fieldLabel": "Existing Loans / Obligations",
+      "category": "FUNDING",
+      "scriptText": "“Do you currently have any outstanding business loans, merchant cash advances, lines of credit, or other financing obligations?”"
+    },
+    {
+      "id": "sc-6",
+      "fieldKey": "ssn",
+      "fieldLabel": "SSN (Last 4)",
+      "category": "CLIENT",
+      "scriptText": "“For regulatory compliance and identity verification, can you please verify the last 4 digits of your Social Security Number?”"
+    },
+    {
+      "id": "sc-7",
+      "fieldKey": "dob",
+      "fieldLabel": "Date of Birth",
+      "category": "CLIENT",
+      "scriptText": "“Can you please verify your date of birth for identity confirmation?”"
+    },
+    {
+      "id": "sc-8",
+      "fieldKey": "requestedAmount",
+      "fieldLabel": "Requested Amount & Purpose",
+      "category": "FUNDING",
+      "scriptText": "“What is the exact capital amount requested and the primary operational purpose of these funds?”"
+    }
+  ],
+  "underwritingRecords": [],
+  "underwritingNotes": [],
+  "lenderSubmissions": [],
+  "documents": [],
+  "communicationLogs": [],
+  "timelineEvents": [
+    {
+      "id": "tl-1787498621821-ql3j7",
+      "clientId": "client-2001",
+      "dealId": "deal-3001",
+      "title": "Commission Collected ($3,105)",
+      "description": "Full 6.9% commission received and distributed to Dana, Luke, Steve, Robert & ABC Partners.",
+      "staffMember": "Dana",
+      "timestamp": "2026-08-23T15:23:41.821Z",
+      "type": "COMMISSION"
+    },
+    {
+      "id": "tl-1787498621821-amghf",
+      "clientId": "client-2001",
+      "dealId": "deal-3001",
+      "title": "Deal #1 Funded ($45,000)",
+      "description": "Primary Revenue Funding deal completed and funded.",
+      "staffMember": "Dana",
+      "timestamp": "2026-08-23T15:23:41.821Z",
+      "type": "FUNDING"
+    },
+    {
+      "id": "tl-1787498621820-3zbq0",
+      "clientId": "client-2001",
+      "dealId": null,
+      "title": "File Approved by Underwriting",
+      "description": "Luke approved dual funding structure.",
+      "staffMember": "Luke",
+      "timestamp": "2026-08-23T15:23:41.820Z",
+      "type": "UNDERWRITING"
+    },
+    {
+      "id": "tl-1787498621820-oqnv0",
+      "clientId": "client-2001",
+      "dealId": null,
+      "title": "Verification Completed",
+      "description": "All client & business details verified by phone.",
+      "staffMember": "Dana",
+      "timestamp": "2026-08-23T15:23:41.820Z",
+      "type": "VERIFICATION"
+    },
+    {
+      "id": "tl-1787498621819-5649y",
+      "clientId": "client-2001",
+      "dealId": null,
+      "title": "Lead Ingested from Partner",
+      "description": "Lead referred by ABC Financial Partners.",
+      "staffMember": "Steve",
+      "timestamp": "2026-08-23T15:23:41.819Z",
+      "type": "LEAD_CREATED"
+    }
+  ],
+  "leadSources": [
+    {
+      "id": "src-1",
+      "name": "Website",
+      "isCustom": false,
+      "active": true
+    },
+    {
+      "id": "src-2",
+      "name": "GHL",
+      "isCustom": false,
+      "active": true
+    },
+    {
+      "id": "src-3",
+      "name": "Facebook",
+      "isCustom": false,
+      "active": true
+    },
+    {
+      "id": "src-4",
+      "name": "Instagram",
+      "isCustom": false,
+      "active": true
+    },
+    {
+      "id": "src-5",
+      "name": "Google",
+      "isCustom": false,
+      "active": true
+    },
+    {
+      "id": "src-6",
+      "name": "Referral",
+      "isCustom": false,
+      "active": true
+    },
+    {
+      "id": "src-7",
+      "name": "Partner",
+      "isCustom": false,
+      "active": true
+    },
+    {
+      "id": "src-8",
+      "name": "Broker",
+      "isCustom": false,
+      "active": true
+    },
+    {
+      "id": "src-9",
+      "name": "Sales Rep",
+      "isCustom": false,
+      "active": true
+    },
+    {
+      "id": "src-10",
+      "name": "Existing Client",
+      "isCustom": false,
+      "active": true
+    },
+    {
+      "id": "src-11",
+      "name": "Other",
+      "isCustom": false,
+      "active": true
+    }
+  ],
+  "referralPartners": [
+    {
+      "id": "ref-1",
+      "name": "ABC Financial Partners",
+      "company": "ABC Capital Group",
+      "email": "partner@abccapital.com",
+      "phone": "(555) 888-1212",
+      "active": true
+    },
+    {
+      "id": "ref-2",
+      "name": "Apex Commercial Brokers",
+      "company": "Apex Advisory LLC",
+      "email": "deals@apexcommercial.com",
+      "phone": "(555) 777-3434",
+      "active": true
+    },
+    {
+      "id": "ref-3",
+      "name": "Summit Business Capital",
+      "company": "Summit Partners",
+      "email": "referrals@summitcap.com",
+      "phone": "(555) 666-5656",
+      "active": true
+    },
+    {
+      "id": "ref-4",
+      "name": "Blue Ridge Advisory",
+      "company": "Blue Ridge Funding",
+      "email": "team@blueridge.com",
+      "phone": "(555) 444-9090",
+      "active": true
+    }
+  ],
+  "ghlConfig": {
+    "apiKey": "ghl_live_key_maplex_sec_99a8b7c6d5e4",
+    "locationId": "loc_maplex_hq_001",
+    "baseUrl": "https://services.leadconnectorhq.com",
+    "isConnected": true,
+    "lastSyncAt": "2026-08-23T15:45:02.621Z",
+    "syncErrors": [],
+    "autoSyncEnabled": true,
+    "fieldMappings": {
+      "leadSourceField": "contact.source",
+      "referralPartnerField": "custom_field.referral_partner",
+      "annualRevenueField": "custom_field.annual_revenue",
+      "creditScoreField": "custom_field.credit_score",
+      "requestedAmountField": "custom_field.funding_amount_requested",
+      "productField": "custom_field.funding_product_interest"
+    },
+    "pipelineMappings": {
+      "NEW_LEAD": "Stage 1 - New Inbound Lead",
+      "SALES_CONTACT": "Stage 2 - Sales Contact Made",
+      "APPLICATION_SENT": "Stage 3 - Application Link Sent",
+      "APPLICATION_RECEIVED": "Stage 4 - Application Submitted",
+      "DOCUMENT_REQUEST": "Stage 5 - Requesting Documents",
+      "DOCUMENTS_RECEIVED": "Stage 6 - Documents In Review",
+      "VERIFICATION_IN_PROGRESS": "Stage 7 - Verification Call Active",
+      "VERIFICATION_COMPLETE": "Stage 8 - Verification Approved",
+      "UNDERWRITING": "Stage 9 - File in Underwriting",
+      "SUBMITTED_TO_LENDER": "Stage 10 - Submitted to Funding Source",
+      "PRE_APPROVED": "Stage 11 - Pre-Approval Terms Received",
+      "APPROVED": "Stage 12 - Final Approved",
+      "FUNDED": "Stage 13 - Deal Funded",
+      "COMMISSION_RECEIVED": "Stage 14 - Commission Settled"
+    }
+  }
+}
